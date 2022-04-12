@@ -92,17 +92,17 @@ public class Calculator {
 
     public static double sqrt(double a){
             double c=0;
-            logger.info("Calculating square root  of given number:" + a);
+//            logger.info("Calculating square root  of given number:" + a);
             if(a<0)
                 c=-1;
             else
                 c = Math.sqrt(a);
-            logger.info("Resultant answer of power operations is : " + c);
+            logger.info("Square Root - Input:" + a + " - Output:" + c);
             return c;
     }
     public static Double fact(int f){
             double result = 1;
-            logger.info("Calculating factorial  of given number:" + f);
+//            logger.info("Calculating factorial  of given number:" + f);
             if(f<0)
                 result=-1;
             else {
@@ -117,22 +117,22 @@ public class Calculator {
                     logger.info("Exception occured");
                 }
             }
-            logger.info("Resultant answer of power operations is : " + result);
+            logger.info("FACTORIAL - Input:" + f + " - Output:" + result);
             return result;
     }
     public static double log(double a){
             double c=0;
-            logger.info("Calculating natural log  of given number:" + a);
+//            logger.info("Calculating natural log  of given number:" + a);
             if(a<=0)
                 c=-1;
             else
             c = Math.log(a);
-            logger.info("Resultant answer of natural log operation is : " + c);
+            logger.info("Logarithm - Input:" + a + " - Output:" + c);
             return c;
     }
     public static double pow ( double a, double b){
             double c=0;
-            logger.info("Calculating power function of given numbers:" + a+","+b);
+//            logger.info("Calculating power function of given numbers:" + a+","+b);
             if (a == 0)
                 return 0;
             if (b == 0)
@@ -143,7 +143,7 @@ public class Calculator {
             catch(Exception e) {
                 logger.info("Exception occured");
             }
-            logger.info("Resultant answer of power operation is : " + c);
+            logger.info("Power Function - Input:" + a + " " + b + " - Output:" + c);
             return c;
         }
     }
