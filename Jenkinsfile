@@ -47,8 +47,8 @@ stage('Push image to DockerHub') {
 	def dockerRun = 'docker run -p 8081:8081 -d docker4harshit/calculator:3'
 	}
 
-	sshagent(['EC2VirtualServer2']) {
-    	bat "ssh -o StrictHostKeyChecking=no HarshitServerForDevOps@172.31.2.46 ${dockerRun}"
+	sshagent(['EC2']) {
+    	sh "ssh -o StrictHostKeyChecking=no ec2-user@172.31.93.97 ${dockerRun}"
 	}
 	
                  }
