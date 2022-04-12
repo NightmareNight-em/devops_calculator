@@ -41,7 +41,7 @@ stage('Push image to DockerHub') {
             }
         } 
         stage('Run Container on Dev Server'){
-	def dockerRun = ''docker run -p 8081:8081 -d docker4harshit/calculator:3"
+	def dockerRun = 'docker run -p 8081:8081 -d docker4harshit/calculator:3'
 	steps{
 
 	sshagent(['EC2VirtualServer']) {
@@ -49,7 +49,7 @@ stage('Push image to DockerHub') {
 	}
 	
                  }
-}
+	}
     
   }
 }
