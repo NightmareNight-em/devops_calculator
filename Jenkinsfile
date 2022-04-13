@@ -48,7 +48,7 @@ stage('Push image to DockerHub') {
 	}
 
 	sshagent(['44.201.235.237']) {
-    	sh "ssh -o StrictHostKeyChecking=no ec2-user@44.201.235.237:22 ${dockerRun}"
+    	bat "ssh -o StrictHostKeyChecking=no ec2-user@44.201.235.237:22 ${dockerRun}"
 	}
 	
                  }
