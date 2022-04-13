@@ -48,7 +48,7 @@ stage('Push image to DockerHub') {
 	}
 
 	sshagent(['44.201.235.237']) {
-    	bat "ssh -o StrictHostKeyChecking=no ec2-user@172.31.83.36 ${dockerRun}"
+    	bat "ssh -i 8130315960.pem ec2-user@ec2-3-89-121-137.compute-1.amazonaws.com ${dockerRun}"
 	}
 	
                  }
