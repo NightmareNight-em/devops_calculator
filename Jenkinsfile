@@ -44,11 +44,11 @@ stage('Push image to DockerHub') {
 	
 	steps{
 	script{
-	def dockerRun = 'docker run -p 8081:8081 -d docker4harshit/calculator:3'
+	def dockerRun = 'docker run -p 8080:8080 -d docker4harshit/calculator:3'
 	}
 
-	sshagent(['EC2']) {
-    	sh "ssh -o StrictHostKeyChecking=no ec2-user@172.31.93.97 ${dockerRun}"
+	sshagent(['44.201.235.237']) {
+    	sh "ssh -o StrictHostKeyChecking=no ec2-user@44.201.235.237 ${dockerRun}"
 	}
 	
                  }
