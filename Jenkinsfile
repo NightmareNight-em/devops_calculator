@@ -43,16 +43,12 @@ stage('Push image to DockerHub') {
         stage('Run Container on Dev Server'){
 	
 	steps{
-	script{
-	def dockerRun = 'docker run -p 8080:8080 -d docker4harshit/calculator:3'
-	}
 
-	sshagent(['44.201.235.237']) {
-    	bat "ssh -i 8130315960.pem ec2-user@172.31.83.36 ${dockerRun}"
-	}
+	
+    	bat "docker run -p 9090:8080 -d docker4harshit/calculator:3"
 	
                  }
-	}
+             }
     
   }
 }
