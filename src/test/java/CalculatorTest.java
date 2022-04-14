@@ -1,5 +1,6 @@
 import org.junit.Test;
 
+import static java.lang.Double.NEGATIVE_INFINITY;
 import static java.lang.Double.NaN;
 import static org.junit.Assert.assertEquals;
 public class CalculatorTest {
@@ -15,7 +16,7 @@ public class CalculatorTest {
     public void testlog(){
         assertEquals("Log of positive number", 2.302585092994046, calculator.logarithm(10), DELTA);
         assertEquals("Log of negative number", NaN, calculator.logarithm(-9), DELTA);
-        assertEquals("Log of 0", -1, calculator.logarithm(0), DELTA);
+        assertEquals("Log of 0", -NEGATIVE_INFINITY, calculator.logarithm(0), DELTA);
         assertEquals("Log of negative number", NaN, calculator.logarithm(-9), DELTA);
     }
     @Test
