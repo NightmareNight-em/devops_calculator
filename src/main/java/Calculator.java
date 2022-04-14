@@ -21,6 +21,7 @@ public class Calculator {
                     "5. Exit\n" +
                     "Enter you choice: ";
             System.out.print(message);
+            sc.nextLine();
             int operation = sc.nextInt();
             while (operation != 5) {
                 System.out.println("====================================================");
