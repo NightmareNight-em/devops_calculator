@@ -1,4 +1,4 @@
-FROM openjdk
+FROM openjdk:8
 MAINTAINER Harshit Nigam nightmarenightem@gmail.com
 WORKDIR ./
 COPY ./target/*.jar ./
