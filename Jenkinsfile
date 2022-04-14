@@ -45,7 +45,7 @@ stage('Push image to DockerHub') {
 	steps{
 
 	
-    	bat "docker run -p 9090:8080 -d docker4harshit/calculator:27"
+    	bat "docker run -p 9090:8080 -d docker4harshit/calculator:28"
 	
                  }
              }
