@@ -1,0 +1,1 @@
+%{TIMESTAMP_ISO8601:timestamp} \[.*?\] %{LOGLEVEL:loglevel} .*? .*? %{WORD:method} .*? .*?:%{NUMBER:field} .*?%{NUMBER:field2}.*
