@@ -13,7 +13,7 @@ public class Calculator {
         try {
             Calculator calculator = new Calculator();
             Scanner sc = new Scanner(System.in);
-            String message = "Select the appropriate option from the following list: \n" +
+            String message = "Select the appropriate option: \n" +
                     "1. Square root\n" +
                     "2. Factorial\n" +
                     "3. Natural Logarithm\n" +
